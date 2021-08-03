@@ -1,0 +1,113 @@
+{
+    "profile": {
+        "name": "Austin",
+        "experience": [
+            {
+                "year": "2020~2021",
+                "compnay": "金姆健康科技",
+                "position": "UI設計師"
+            },
+            {
+                "year": "2017~2020",
+                "compnay": "預見創意",
+                "position": "網頁設計師"
+            }
+        ],
+        "Education": [
+            {
+                "year": "2003~2005",
+                "compnay": "景文技術學院",
+                "department": "視覺傳達設計系 "
+            },
+            {
+                "year": "1998~2000",
+                "compnay": "復興商工",
+                "department": "美工科"
+            }
+        ],
+        "bio": [
+            "面試的自我介紹開頭，目的是讓面試官了解「你是誰」，並且對你產生興趣。通常會先簡單描述自己的個人資訊，並突出與職缺相關的特點。"
+        ],
+        "skill": [
+            "Adobe Photoshop",
+            "Adobe Illustrator",
+            "Adobe XD"
+        ]
+    },
+    "work": [
+        {
+            "type": "平面設計",
+            "list": [
+                {
+                    "title": "這個專案名稱1",
+                    "client": "客戶名稱1",
+                    "workList": [
+                        {
+                            "srcLarge": "images/client1/image-1-o.jpg",
+                            "srcSmall":  "images/client1/image-1-s.jpg",
+                            "information": "這個作品說明1"
+                        },
+                        {
+                            "srcLarge": "images/client1/image-2-o.jpg",
+                            "srcSmall":  "images/client1/image-2-s.jpg",
+                            "information": "這個作品說明2"
+                        }
+                    ]
+                },
+                {
+                    "title": "這個專案名稱2",
+                    "client": "客戶名稱2",
+                    "workList": [
+                        {
+                            "srcLarge": "images/client1/image-1-o.jpg",
+                            "srcSmall":  "images/client1/image-1-s.jpg",
+                            "information": "這個作品說明1"
+                        },
+                        {
+                            "srcLarge": "images/client1/image-2-o.jpg",
+                            "srcSmall":  "images/client1/image-2-s.jpg",
+                            "information": "這個作品說明2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "網頁設計",
+            "list": [
+                {
+                    "title": "這個專案名稱1",
+                    "client": "客戶名稱1",
+                    "workList": [
+                        {
+                            "srcLarge": "images/client1/image-1-o.jpg",
+                            "srcSmall":  "images/client1/image-1-s.jpg",
+                            "information": "這個作品說明1"
+                        },
+                        {
+                            "srcLarge": "images/client1/image-2-o.jpg",
+                            "srcSmall":  "images/client1/image-2-s.jpg",
+                            "information": "這個作品說明2"
+                        }
+                    ]
+                },
+                {
+                    "title": "這個專案名稱2",
+                    "client": "客戶名稱2",
+                    "workList": [
+                        {
+                            "srcLarge": "images/client1/image-1-o.jpg",
+                            "srcSmall":  "images/client1/image-1-s.jpg",
+                            "information": "這個作品說明1"
+                        },
+                        {
+                            "srcLarge": "images/client1/image-2-o.jpg",
+                            "srcSmall":  "images/client1/image-2-s.jpg",
+                            "information": "這個作品說明2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
