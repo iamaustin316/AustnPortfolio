@@ -1,21 +1,69 @@
 <template>
-    <div class="container">
-        <h2>Home</h2>
-        <ul>
-            <li v-for="(value, index) in profileData" :key="index">
-                <h2>{{ index }}</h2>
-                <div v-if="typeof value === 'string'">
-                    {{value}}
+    <div class="home">
+        <header>
+            <Nav></Nav>
+        </header>
+        <div class="container">
+            <div class="profile">
+                <div class="profile__rows">
+                    <h2>姓名</h2>
+                    <h4>{{ profileData.name }}</h4>
+                    <img :src="profileData.avatar" :alt="profileData.name">
                 </div>
-                <ol v-else>
-                    <li v-for="item in value" :key="item">
-                        {{ item }}
-                    </li>
-                </ol>
-            </li>
-        </ul>
-        <div>{{ workData }}</div>
-        <Nav></Nav>
+                <div class="profile__rows">
+                    <h3>工作經歷</h3>
+                    <div>
+                        <div v-for="(item, index) in profileData.experience" :key="index">
+                            <span>{{ item.year }}</span>
+                            <span>{{ item.compnay }}</span>
+                            <span>{{ item.positon }}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile__rows">
+                    <h2>學歷</h2>
+                    <div>
+                        <div v-for="(item, index) in profileData.education" :key="index">
+                            <span>{{ item.year }}</span>
+                            <span>{{ item.school }}</span>
+                            <span>{{ item.department }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <div class="rows">
+                    <div class="work-type" v-for="(item, index) in workData" :key="index">
+                        <h2>{{ item.type }}</h2>
+                        <div class="work-wrap" v-for="(work, index) in item.list" :key="index">
+                            <div class="work-wrap__header">
+                                <div class="work-wrap__rows">
+                                    <h3>專案</h3>
+                                    <div>{{ work.title }}</div>
+                                </div>
+                                <div class="work-wrap__rows">
+                                    <h3>客戶</h3>
+                                    <div>{{ work.client }}</div>
+                                </div>
+                                <div class="work-wrap__rows">
+                                    <h3>工具</h3>
+                                    <div>
+                                        <span v-for="(tool, index) in work.tool" :key="index">
+                                            {{ tool }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-list">
+                                <div class="work-list__item" v-for="(workItem, index) in work.workList" :key="index">
+                                    <img :src="workItem.srcSmall" :alt="workItem.information" loading="lazy" width="200" height="200">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -32,7 +80,6 @@ export default {
         const workData = ref([])
 
         onMounted(()=>{
-            console.log('123')
             axios.get('./data/portfolio.json').then(res=>{
                 profileData.value = res.data.profile
                 workData.value = res.data.work
@@ -45,6 +92,86 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+    .container {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 32rem 1fr;
+        gap: 2rem;
+    }
+    .profile {
+        &__rows {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+            h2 {
+                color: #aaa;
+                font-size: 2rem;
+                font-weight: 500;
+                margin-bottom: 4rem;
+            }
+            h4 {
+                color: #333;
+                font-size: 2rem;
+                font-weight: 500;
+                line-height: 1.6;
+            }
+        }
+    }
+    .work-type {
+        &:not(:last-child) {
+            margin-bottom: 6rem;
+        }
+        > h2 {
+            color: #aaa;
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 4rem;
+        }
+        h4 {
+            color: #333;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+        h5 {
+            color: #333;
+            font-size: 1.2rem;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+    }
+    .work-list {
+        display: flex;
+    }
+    .work-wrap {
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+        &__rows {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            &:not(:last-child) {
+                padding-bottom: 0.4rem;
+                margin-bottom: 0.4rem;
+                border-bottom: solid 0.1rem #eee;
+            }
+            > h3 {
+                color: #aaa;
+                font-size: 1.2rem;
+                font-weight: 500;
+                line-height: 1.6;
+            }
+            > div {
+                color: #666;
+                font-size: 1.2rem;
+                font-weight: 500;
+                line-height: 1.6;
+            }
+        }
+        &__header {
+            margin-bottom: 1rem;
+        }
+    }
 </style>
