@@ -6,7 +6,7 @@
         <div class="container">
             <div class="profile">
                 <div class="profile__rows">
-                    <h2>姓名</h2>
+                    <h2>姓名Dev</h2>
                     <h4>{{ profileData.name }}</h4>
                     <img :src="profileData.avatar" :alt="profileData.name">
                 </div>
