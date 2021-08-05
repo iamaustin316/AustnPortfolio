@@ -1,10 +1,20 @@
 <template>
+	<Nav></Nav>
 	<router-view v-slot="{ Component }">
 		<transition name="moveUp" mode="out-in">
-		<component :is="Component" />
+			<component :is="Component" />
 		</transition>
 	</router-view>
 </template>
+
+<script>
+import Nav from './components/Nav.vue'
+export default {
+	components: {
+		Nav
+	}
+}
+</script>
 
 <style lang="scss">
 	@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&family=STIX+Two+Text&display=swap');

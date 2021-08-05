@@ -1,8 +1,5 @@
 <template>
     <div class="home">
-        <header>
-            <Nav></Nav>
-        </header>
         <div class="container">
             <div class="profile">
                 <div class="profile__rows">
@@ -70,11 +67,7 @@
 <script>
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
-import Nav from '../components/Nav.vue'
 export default {
-    components: {
-        Nav
-    },
     setup() {
         const profileData = ref([])
         const workData = ref([])

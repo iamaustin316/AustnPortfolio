@@ -1,9 +1,11 @@
 <template>
-    <div class="nav">
-        <router-link to="/">首頁</router-link>
-        <router-link to="/about">關於</router-link>
-        <router-link to="/work">作品</router-link>
-    </div>
+    <header>
+        <div class="nav">
+            <router-link to="/">首頁</router-link>
+            <router-link to="/about">關於</router-link>
+            <router-link to="/work">作品</router-link>
+        </div>
+    </header>
 </template>
 
 <script>
@@ -14,6 +16,7 @@ export default {
 
 <style lang="scss" scoped>
     .nav {
+        justify-content: flex-end;
         background: #333;
         padding: 2rem;
         width: 100%;
