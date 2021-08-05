@@ -1,0 +1,152 @@
+{
+    "profile": {
+        "name": "Austin",
+        "avatar": "https://i.pravatar.cc/150?img=56",
+        "experience": [
+            {
+                "year": "2020-2021",
+                "compnay": "金姆健康科技",
+                "position": "UI設計師"
+            },
+            {
+                "year": "2017-2020",
+                "compnay": "預見創意",
+                "position": "網頁設計師"
+            }
+        ],
+        "education": [
+            {
+                "year": "2003-2005",
+                "school": "景文技術學院",
+                "department": "視覺傳達設計系 "
+            },
+            {
+                "year": "1998-2000",
+                "school": "復興商工",
+                "department": "美工科"
+            }
+        ],
+        "bio": [
+            "面試的自我介紹開頭，目的是讓面試官了解「你是誰」，並且對你產生興趣。通常會先簡單描述自己的個人資訊，並突出與職缺相關的特點。"
+        ],
+        "skill": [
+            "Adobe Photoshop",
+            "Adobe Illustrator",
+            "Adobe XD"
+        ]
+    },
+    "work": [
+        {
+            "type": "平面設計",
+            "list": [
+                {
+                    "title": "這個專案名稱1",
+                    "client": "客戶名稱1",
+                    "intro": "以地重實今現爭是四都會太辦般施一卻國的冷市情輕們他安得當發備城這容要知，愛素們線戲改可、意可我，好招得：這是場仍向己具級有一報加們衣所真。",
+                    "tool": [
+                        "HTML",
+                        "CSS",
+                        "JS"
+                    ],
+                    "date": "2020-08",
+                    "workList": [
+                        {
+                            "srcLarge": "https://picsum.photos/800/800",
+                            "srcSmall":  "https://picsum.photos/400/400",
+                            "information": "這個作品說明1"
+                        },
+                        {
+                            "srcLarge": "https://picsum.photos/800/800",
+                            "srcSmall":  "https://picsum.photos/400/400",
+                            "information": "這個作品說明2"
+                        },
+                        {
+                            "srcLarge": "https://picsum.photos/800/800",
+                            "srcSmall":  "https://picsum.photos/400/400",
+                            "information": "這個作品說明2"
+                        },
+                        {
+                            "srcLarge": "https://picsum.photos/800/800",
+                            "srcSmall":  "https://picsum.photos/400/400",
+                            "information": "這個作品說明2"
+                        }
+                    ]
+                },
+                {
+                    "title": "這個專案名稱2",
+                    "client": "客戶名稱2",
+                    "intro": "以地重實今現爭是四都會太辦般施一卻國的冷市情輕們他安得當發備城這容要知，愛素們線戲改可、意可我，好招得：這是場仍向己具級有一報加們衣所真。",
+                    "tool": [
+                        "HTML",
+                        "CSS",
+                        "JS"
+                    ],
+                    "date": "2020-08",
+                    "workList": [
+                        {
+                            "srcLarge": "https://picsum.photos/800/800",
+                            "srcSmall":  "https://picsum.photos/400/400",
+                            "information": "這個作品說明1"
+                        },
+                        {
+                            "srcLarge": "https://picsum.photos/800/800",
+                            "srcSmall":  "https://picsum.photos/400/400",
+                            "information": "這個作品說明2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "網頁設計",
+            "list": [
+                {
+                    "title": "這個專案名稱1",
+                    "client": "客戶名稱1",
+                    "intro": "以地重實今現爭是四都會太辦般施一卻國的冷市情輕們他安得當發備城這容要知，愛素們線戲改可、意可我，好招得：這是場仍向己具級有一報加們衣所真。",
+                    "tool": [
+                        "HTML",
+                        "CSS",
+                        "JS"
+                    ],
+                    "date": "2020-08",
+                    "workList": [
+                        {
+                            "srcLarge": "https://picsum.photos/800/800",
+                            "srcSmall":  "https://picsum.photos/400/400",
+                            "information": "這個作品說明1"
+                        },
+                        {
+                            "srcLarge": "https://picsum.photos/800/800",
+                            "srcSmall":  "https://picsum.photos/400/400",
+                            "information": "這個作品說明2"
+                        }
+                    ]
+                },
+                {
+                    "title": "這個專案名稱2",
+                    "client": "客戶名稱2",
+                    "intro": "以地重實今現爭是四都會太辦般施一卻國的冷市情輕們他安得當發備城這容要知，愛素們線戲改可、意可我，好招得：這是場仍向己具級有一報加們衣所真。",
+                    "tool": [
+                        "HTML",
+                        "CSS",
+                        "JS"
+                    ],
+                    "date": "2020-08",
+                    "workList": [
+                        {
+                            "srcLarge": "https://picsum.photos/800/800",
+                            "srcSmall":  "https://picsum.photos/400/400",
+                            "information": "這個作品說明1"
+                        },
+                        {
+                            "srcLarge": "https://picsum.photos/800/800",
+                            "srcSmall":  "https://picsum.photos/400/400",
+                            "information": "這個作品說明2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
