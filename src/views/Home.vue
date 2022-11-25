@@ -8,7 +8,7 @@
                     <img :src="profileData.avatar" :alt="profileData.name">
                 </div>
                 <div class="profile__rows">
-                    <h3>工作經歷</h3>
+                    <h2>工作經歷</h2>
                     <div>
                         <div v-for="(item, index) in profileData.experience" :key="index">
                             <span>{{ item.year }}</span>
@@ -43,6 +43,10 @@
                                     <div>{{ work.client }}</div>
                                 </div>
                                 <div class="work-wrap__rows">
+                                    <h3>簡介</h3>
+                                    <div>{{ work.intro }}</div>
+                                </div>
+                                <div class="work-wrap__rows">
                                     <h3>工具</h3>
                                     <div>
                                         <span v-for="(tool, index) in work.tool" :key="index">
@@ -54,6 +58,7 @@
                             <div class="work-list">
                                 <div class="work-list__item" v-for="(workItem, index) in work.workList" :key="index">
                                     <img :src="workItem.srcSmall" :alt="workItem.information" loading="lazy" width="200" height="200">
+                                    <p>{{ workItem.information }}</p>
                                 </div>
                             </div>
                         </div>
@@ -89,19 +94,19 @@ export default {
     .container {
         padding: 2rem;
         display: grid;
-        grid-template-columns: 32rem 1fr;
+        grid-template-columns: 1fr;
         gap: 2rem;
     }
     .profile {
         &__rows {
             &:not(:last-child) {
-                margin-bottom: 2rem;
+                margin-bottom: 4rem;
             }
             h2 {
                 color: #aaa;
                 font-size: 2rem;
                 font-weight: 500;
-                margin-bottom: 4rem;
+                margin-bottom: 2rem;
             }
             h4 {
                 color: #333;
@@ -135,7 +140,11 @@ export default {
         }
     }
     .work-list {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @media screen and (max-width:768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
     .work-wrap {
         &:not(:last-child) {
